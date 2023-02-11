@@ -1,0 +1,367 @@
+@font-face {
+  font-family: 'French Script MT';
+  src: url(../fonts/FrenchScriptMT.ttf);
+}
+@font-face {
+  font-family: 'Segoe Print';
+  src: url(../fonts/segoepr.ttf);
+}
+@font-face {
+  font-family: 'Questrial';
+  src: url(../fonts/Questrial.ttf);
+}
+@font-face {
+  font-family: 'Great Vibes';
+  src: url(../fonts/GreatVibes.otf);
+}
+a{
+      font-family:French Script MT;
+      font-size:30px;
+      color:#f23c48;
+    }
+    a:hover{
+      color:black;
+    }
+    body{ 
+      padding-top: 50px; 
+    }
+    .my-toggle{
+      border-color: grey;
+      margin-left:15px;
+    }
+    .my-navbar{
+      background: white;
+      white-space: nowrap;
+      min-height:50px;
+    }
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 1000px;
+}
+    .card-title{
+      font-family: Great Vibes, cursive;font-size:30px;
+    }
+    .card-text{
+      font-family:Segoe Print;
+    }
+    .c1{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.4);
+        padding:20px;
+    }
+    .c1{
+        transition: all 0.2s ease;
+        width: -webkit-fill-available;
+    }
+    .c1:hover{
+        transform: scale(1.03);
+    }
+    .row.display-flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .row.display-flex > [class*='col-'] {
+      display: flex;
+    }
+    footer{
+      text-align:center;
+      opacity:.8;
+      padding:50px;
+      background-image:-webkit-linear-gradient(left, #720e9e 0, #dd4b39 100%);
+      background-image:-o-linear-gradient(left, #720e9e 0, #dd4b39 100%);
+      background-image:linear-gradient(to right, #720e9e 0, #dd4b39 100%);
+      background-repeat:repeat-x;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdd4b39', endColorstr='#ff720e9e', GradientType=1)
+      }
+      footer a 
+      {
+        color:#fff;
+        font-size: 20px;
+        font-family: 'Questrial', sans-serif;
+        padding:10px;
+      }
+      .fa
+      {
+        font-size: 20px;
+      }
+      footer a:hover
+      {
+        text-decoration: none;
+        color:black;
+        font-size: 21px;
+      }
+      #logo
+      {
+        font-size:55px;
+        font-family:French Script MT;
+        color:#f23c48;
+        text-decoration: none;
+      }
+      #logo:hover
+      {
+        color:white;
+      }
+      #cr
+      {
+        font-family: 'Questrial', sans-serif;
+        font-size:15px;
+        color:white;
+      }
+      #mybtn
+      {
+        font-family: 'Questrial', sans-serif;
+        border-style:solid;
+        border-width:1.5px ;
+        border-color:#f23c48;
+        font-size:20px;
+        background-color:white;
+        padding:10px;
+      }
+      #mybtn:hover
+      {
+        color:black;
+        border-color:black;
+      }
+      #pad
+      {
+        color:#f23c48; 
+        padding: 5px;
+      }
+      a:focus
+      {
+        color:#f23c48;
+      }
+      #modalLoginForm,#modalSignUpForm, .modal
+      {
+        font-family: 'Questrial', sans-serif;
+        border-radius:0px;
+      }
+      .mybtn-inv
+      {
+        font-family: 'Questrial', sans-serif;
+        border-style:solid;
+        border-radius: 0px;
+        border-width:1.5px ;
+        border-color:#f23c48;
+        font-size:20px;
+        background-color:#f23c48;
+        color:white;
+        padding:10px;
+      }
+      .mybtn-inv:hover
+      {
+        color:white;
+        border-color:black;
+        background-color:black;
+      }
+.floating-label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    z-index: 1500;
+    color: #f23c48;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* Hide the browser-specific focus styles */
+.floating-label-field
+{
+    border-width: 0;
+    z-index: 2000;
+
+}
+.floating-label-field:focus
+{
+    outline: 0;
+    box-shadow: 0;
+}
+/* Make the label and field look identical on every browser */
+.floating-label,
+.floating-label-field
+{
+    font: inherit;
+    line-height: 1; 
+
+    display: block;
+
+    width: 100%;
+}
+.floating-label-field,
+.floating-label-wrap
+{
+    position: relative;
+}
+.floating-label-field--s3
+{
+    padding: 1.5em; 
+    margin-top:20px;
+    transition: border-color .25s ease-in-out;
+    color: #f23c48;
+    border: 2px solid #f23c48;
+    border-radius: 5px;
+    background-color: transparent;
+    border-radius:0px;
+
+}
+.floating-label-field--s3 + .floating-label
+{
+    position: absolute;
+    top: .75em;
+    left: .75em;
+
+    display: inline-block;
+
+    width: auto;
+    margin: 0;
+    padding: .75em;
+
+    transition: transform .25s, padding .25s ease-in-out;
+    transform-origin: 0 0;
+
+    color: #f23c48;
+}
+.floating-label-field--s3:focus,
+.floating-label-field--s3:not(:placeholder-shown)
+{
+    border-color: #f23c48;
+    border: 2px solid black;
+}
+.floating-label-field--s3:focus + .floating-label,
+.floating-label-field--s3:not(:placeholder-shown) + .floating-label
+{
+    z-index: 2500;
+
+    padding: .75em;
+
+    transform: translate(0, -2em) scale(.9);
+
+    color: black; 
+    background-color: white;
+}
+
+/* Common Styles */
+/* Identical inputs on all browsers */
+.floating-label-field--s3:not(textarea)
+{
+    max-height: 4em;
+}
+
+.floating-label-field--s3 + .floating-label
+{
+    z-index: 1500;
+}
+
+.floating-label-field--s3::placeholder
+{
+    color: transparent;
+}
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  color:black;
+}
+li .dd
+{
+  font-family: 'Questrial', sans-serif;
+}
+#mybtn1
+      {
+        font-family: 'Questrial', sans-serif;
+        border-style:solid;
+        border-width:1.5px ;
+        border-color:#f23c48;
+        font-size:20px;
+        background-color:#f23c48;
+        padding:10px;
+        color:white;
+      }
+      #mybtn1:hover
+      {
+        background-color:black;
+        border-color:black;
+      }
+      #pad1
+      {
+        color:#f23c48; 
+        padding: 5px;
+      }
+      .btn .btn-outline-dark
+    {
+      font-family:Segoe Print;
+    }
+    table
+    {
+      font-family:'Questrial',sans-serif;
+    }
+    thead
+    {
+      background-color: #f23c48;
+      opacity: .7;
+      color:white;
+    }
+    caption
+    {
+      text-align:right;
+      font-weight:bold;
+      color:green;
+      font-size:30px;
+    }
+    .badge
+    {
+      background-color: #f23c48;
+      color:white;
+    }
+.fontq
+{
+  font-family: 'Questrial',sans-serif;
+  font-size:20px;
+}
+          #rzp-button1 {
+            float:right;
+            border: 0;
+                border-radius: 3px;
+                -webkit-transition: .2s;
+                transition: .2s;
+                box-shadow: 0 3px 13px rgba(0,0,0,0.09), 0 1px 5px 0 rgba(0,0,0,0.14);
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                line-height: 48px;
+                height: 40px;
+                padding: 0 24px;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: .5px;
+                font-weight: bold;
+                background: #f23c48;
+                color: #fff;
+                cursor: pointer;
+                font-family: 'Questrial', sans-serif;
+            }
+
+            #rzp-button1:hover {
+                -webkit-transform: translateY(-2px) scale(1.01);
+                -ms-transform: translateY(-2px) scale(1.01);
+                transform: translateY(-2px) scale(1.01);
+                box-shadow: 0 5px 16px 1px rgba(0,0,0,0.13), 0 1px 4px 0 rgba(0,0,0,0.09);
+            }
+
+            #rzp-button1:active {
+                -webkit-transform: perspective(40px) rotateX(1deg);
+                transform: perspective(40px) rotateX(1deg)
+            }
+
+            #rzp-button1 p {
+            margin: 0;
+            padding: 0;
+            line-height: 40px;
+            font-size: 14px;
+            }
+            
